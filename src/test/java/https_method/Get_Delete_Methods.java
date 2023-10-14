@@ -9,22 +9,31 @@ import io.restassured.response.Response;
 
 public class Get_Delete_Methods {
 	static String basic_auth = "sk_test_51MnoCzCG0XLhk2w9oaMABmQRLgcEsLaW6XrjdHCtRTwbxXB7mz55R1TZs8khqiykx6HzrPzlR2c5ap9J3qeShh5D009eT0AHpN";
-	
-	@Ignore
+	static String user_id = "cus_Ooa2CL5gYThUL1";
+
 	@Test
 	public void getAllUsers() {
 		
 	Response response = given().auth().basic(basic_auth, "").when().get("https://api.stripe.com/v1/customers");
 		
 		response.prettyPeek();
+		response.prettyPrint();
 	}
-	
+	@Ignore
 	@Test
 	public void getSingleUser() {
 		
-		given().auth().basic(basic_auth, "").get("https://api.stripe.com/v1/customers/cus_OnNtYWKE44VDjR").then().statusCode(200).log().all();
+		given().auth().basic(basic_auth, "").get("https://api.stripe.com/v1/customers/" +user_id).then().statusCode(200).log().all();
 		
 	}
+	@Ignore
+	@Test
+	public void deleteUser() {
+		
+		given().auth().basic(basic_auth, "").delete("https://api.stripe.com/v1/customers/" + user_id).then().statusCode(200).log().everything();
+	}
+	
+	
 	
 
 }
