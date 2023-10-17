@@ -10,7 +10,7 @@ import io.restassured.response.Response;
 public class Get_Delete_Methods {
 	static String basic_auth = "sk_test_51MnoCzCG0XLhk2w9oaMABmQRLgcEsLaW6XrjdHCtRTwbxXB7mz55R1TZs8khqiykx6HzrPzlR2c5ap9J3qeShh5D009eT0AHpN";
 	static String user_id = "cus_Ooa2CL5gYThUL1";
-
+	@Ignore
 	@Test
 	public void getAllUsers() {
 		
@@ -26,7 +26,7 @@ public class Get_Delete_Methods {
 		given().auth().basic(basic_auth, "").get("https://api.stripe.com/v1/customers/" +user_id).then().statusCode(200).log().all();
 		
 	}
-	@Ignore
+	
 	@Test
 	public void deleteUser() {
 		
