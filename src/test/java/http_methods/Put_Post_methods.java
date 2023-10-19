@@ -1,4 +1,4 @@
-package https_method;
+package http_methods;
 import static io.restassured.RestAssured.given;
 
 import org.junit.Ignore;

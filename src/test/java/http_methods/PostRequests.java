@@ -1,4 +1,4 @@
-package https_method;
+package http_methods;
 import static io.restassured.RestAssured.given;
 
 import java.io.File;
@@ -11,7 +11,8 @@ import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import utils.Users;
+import utils.Customers;
+
 
 public class PostRequests {
 	 public static String secret_key = "sk_test_51MnoCzCG0XLhk2w9oaMABmQRLgcEsLaW6XrjdHCtRTwbxXB7mz55R1TZs8khqiykx6HzrPzlR2c5ap9J3qeShh5D009eT0AHpN";
@@ -78,7 +79,7 @@ public class PostRequests {
 					
 		}
 		
-		
+	   @Ignore
 		@Test   // create payload using json file
 		public void createUser_jsonFile() {
 			
@@ -91,14 +92,15 @@ public class PostRequests {
 		
 		} 
 		
-		@Ignore
-		@Test
+		
+		@Test    // pojo stands for plain old java object
 		public void createUser_PojoClass() {
-			Users user = new Users("sayed", "sayed@hotmail.com","sdet","seattle");
+			
+			Customers customers = new Customers("Kate", "kate@gmail.com", "seattle WA");
 			
 			
 			Response response = given().contentType(ContentType.JSON).
-					body(user).
+					body(customers).
 					when().post("https://reqres.in/api/users");
 			
 			

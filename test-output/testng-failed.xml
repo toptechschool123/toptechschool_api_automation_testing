@@ -3,11 +3,11 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="https_method.Put_Post_methods">
+      <class name="tests_verification.JsonResponseValidation">
         <methods>
-          <include name="updateUser"/>
+          <include name="validateJsonResponse3"/>
         </methods>
-      </class> <!-- https_method.Put_Post_methods -->
+      </class> <!-- tests_verification.JsonResponseValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
