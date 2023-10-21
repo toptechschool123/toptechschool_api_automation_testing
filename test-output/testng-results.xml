@@ -2,84 +2,24 @@
 <testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-19T02:06:05Z" name="Default suite" finished-at="2023-10-19T02:06:10Z" duration-ms="4446">
+  <suite started-at="2023-10-21T00:30:06Z" name="Default suite" finished-at="2023-10-21T00:30:10Z" duration-ms="4396">
     <groups>
     </groups>
-    <test started-at="2023-10-19T02:06:05Z" name="Default test" finished-at="2023-10-19T02:06:10Z" duration-ms="4446">
-      <class name="tests_verification.JsonResponseValidation">
-        <test-method signature="validateJsonResponse3()[pri:0, instance:tests_verification.JsonResponseValidation@14008db3]" started-at="2023-10-18T19:06:05Z" name="validateJsonResponse3" finished-at="2023-10-18T19:06:10Z" duration-ms="4405" status="FAIL">
+    <test started-at="2023-10-21T00:30:06Z" name="Default test" finished-at="2023-10-21T00:30:10Z" duration-ms="4396">
+      <class name="tests_verification.Assertions">
+        <test-method signature="assertions()[pri:0, instance:tests_verification.Assertions@59d4cd39]" started-at="2023-10-20T17:30:06Z" name="assertions" finished-at="2023-10-20T17:30:10Z" duration-ms="4357" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[1 expectation failed.
-Expected header "Content-Type" was not "application/json0", was "application/json". Headers are:
-Server=nginx
-Date=Thu, 19 Oct 2023 02:06:07 GMT
-Content-Type=application/json
-Content-Length=641
-Connection=keep-alive
-Access-Control-Allow-Credentials=true
-Access-Control-Allow-Methods=GET,HEAD,PUT,PATCH,POST,DELETE
-Access-Control-Allow-Origin=*
-Access-Control-Expose-Headers=Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required
-Access-Control-Max-Age=300
-Cache-Control=no-cache, no-store
-Content-Security-Policy-Report-Only=report-uri https://q.stripe.com/csp-report?p=v1%2Fcustomers%2F%3Acustomer; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
-Request-Id=req_lSCsB2fVkQh0wK
-Stripe-Version=2022-11-15
-Vary=Origin
-X-Stripe-Routing-Context-Priority-Tier=api-testmode
-Strict-Transport-Security=max-age=63072000; includeSubDomains; preload
-]]>
+              <![CDATA[expected [20A029F9t] but found [20A029F9]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected header "Content-Type" was not "application/json0", was "application/json". Headers are:
-Server=nginx
-Date=Thu, 19 Oct 2023 02:06:07 GMT
-Content-Type=application/json
-Content-Length=641
-Connection=keep-alive
-Access-Control-Allow-Credentials=true
-Access-Control-Allow-Methods=GET,HEAD,PUT,PATCH,POST,DELETE
-Access-Control-Allow-Origin=*
-Access-Control-Expose-Headers=Request-Id, Stripe-Manage-Version, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required
-Access-Control-Max-Age=300
-Cache-Control=no-cache, no-store
-Content-Security-Policy-Report-Only=report-uri https://q.stripe.com/csp-report?p=v1%2Fcustomers%2F%3Acustomer; block-all-mixed-content; default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
-Request-Id=req_lSCsB2fVkQh0wK
-Stripe-Version=2022-11-15
-Vary=Origin
-X-Stripe-Routing-Context-Priority-Tier=api-testmode
-Strict-Transport-Security=max-age=63072000; includeSubDomains; preload
-
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.headers(ResponseSpecificationImpl.groovy:156)
-	at io.restassured.specification.ResponseSpecification$headers$3.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.headers(ResponseSpecificationImpl.groovy:173)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.headers(ValidatableResponseOptionsImpl.java:109)
-	at tests_verification.JsonResponseValidation.validateJsonResponse3(JsonResponseValidation.java:49)
+              <![CDATA[java.lang.AssertionError: expected [20A029F9t] but found [20A029F9]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at tests_verification.Assertions.assertions(Assertions.java:53)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
@@ -107,8 +47,8 @@ Strict-Transport-Security=max-age=63072000; includeSubDomains; preload
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateJsonResponse3 -->
-      </class> <!-- tests_verification.JsonResponseValidation -->
+        </test-method> <!-- assertions -->
+      </class> <!-- tests_verification.Assertions -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
