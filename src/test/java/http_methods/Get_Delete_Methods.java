@@ -19,14 +19,14 @@ public class Get_Delete_Methods {
 		response.prettyPeek();
 		response.prettyPrint();
 	}
-	@Ignore
+	
 	@Test
 	public void getSingleUser() {
 		
 		given().auth().basic(basic_auth, "").get("https://api.stripe.com/v1/customers/" +user_id).then().statusCode(200).log().all();
 		
 	}
-	
+	@Ignore
 	@Test
 	public void deleteUser() {
 		

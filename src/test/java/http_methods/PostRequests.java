@@ -20,15 +20,15 @@ public class PostRequests {
 		
 	// we create users in different ways: 1: using parameters 2: using json format. 
 		
-	 @Ignore
+	
 	 @Test
 		public void createUser() {
 		 
 			 
 			Response response = given().auth().basic(secret_key, "")
-					.param("name", "Shakera")
-					.param("email", "Shakera@toptechschool.us")
-					.param("description", "singer")
+					.param("name", "Shah")
+					.param("email", "Shah@toptechschool.us")
+					.param("description", "shopkeeper")
 					.when().post("https://api.stripe.com/v1/customers");
 				
 			response.prettyPeek();	
@@ -92,7 +92,7 @@ public class PostRequests {
 		
 		} 
 		
-		
+	   @Ignore
 		@Test    // pojo stands for plain old java object
 		public void createUser_PojoClass() {
 			

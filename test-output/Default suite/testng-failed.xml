@@ -3,11 +3,11 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="tests_verification.Assertions">
+      <class name="tests_verification.JsonSchemaValidation">
         <methods>
-          <include name="assertions"/>
+          <include name="jsonSchemavalidation"/>
         </methods>
-      </class> <!-- tests_verification.Assertions -->
+      </class> <!-- tests_verification.JsonSchemaValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

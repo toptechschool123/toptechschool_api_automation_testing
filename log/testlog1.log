@@ -1,0 +1,43 @@
+2023-10-23 18:58:47,048 [main] INFO Logger_File - it is before test
+2023-10-23 18:58:50,772 [main] INFO Logger_File - it is json response
+2023-10-23 19:00:19,151 [main] INFO Logger_File - it is before test
+2023-10-23 19:00:22,431 [main] INFO Logger_File - it is json response
+2023-10-23 19:02:32,794 [main] INFO Logger_File - it is before test
+2023-10-23 19:02:35,622 [main] INFO Logger_File - it is json response
+2023-10-23 19:14:30,803 [main] INFO Logger_File - test execution startedorg.testng.TestRunner@12ed9db6
+2023-10-23 19:14:30,856 [main] INFO Logger_File - it is before test
+2023-10-23 19:14:30,905 [main] INFO Logger_File - getAllUsers
+2023-10-23 19:14:34,593 [main] INFO Logger_File - it is json response
+2023-10-23 19:14:34,605 [main] INFO Logger_File - test passed successfully
+2023-10-23 19:14:34,612 [main] INFO Logger_File - method name: getAllUsers
+2023-10-23 19:14:34,735 [main] INFO Logger_File -  end of executionorg.testng.TestRunner@12ed9db6
+2023-10-23 19:16:13,716 [main] INFO Logger_File - test execution startedorg.testng.TestRunner@530712d
+2023-10-23 19:16:13,751 [main] INFO Logger_File - it is before test
+2023-10-23 19:16:13,788 [main] INFO Logger_File - getAllUsers
+2023-10-23 19:16:17,736 [main] INFO Logger_File - it is json response
+2023-10-23 19:16:17,750 [main] INFO Logger_File - test passed successfully
+2023-10-23 19:16:17,751 [main] INFO Logger_File - method name: getAllUsers
+2023-10-23 19:16:17,781 [main] INFO Logger_File - getSingleUser
+2023-10-23 19:16:17,940 [main] INFO Logger_File - test passed successfully
+2023-10-23 19:16:17,941 [main] INFO Logger_File - method name: getSingleUser
+2023-10-23 19:16:17,980 [main] INFO Logger_File -  end of executionorg.testng.TestRunner@530712d
+2023-10-23 19:17:18,720 [main] INFO Logger_File - test execution startedorg.testng.TestRunner@530712d
+2023-10-23 19:17:18,759 [main] INFO Logger_File - it is before test
+2023-10-23 19:17:18,804 [main] INFO Logger_File - getAllUsers
+2023-10-23 19:17:22,593 [main] INFO Logger_File - it is json response
+2023-10-23 19:17:22,602 [main] INFO Logger_File - test passed successfully
+2023-10-23 19:17:22,603 [main] INFO Logger_File - method name: getAllUsers
+2023-10-23 19:17:22,627 [main] INFO Logger_File - getSingleUser
+2023-10-23 19:17:22,874 [main] INFO Logger_File - test passed successfully
+2023-10-23 19:17:22,875 [main] INFO Logger_File - method name: getSingleUser
+2023-10-23 19:17:22,915 [main] INFO Logger_File -  end of executionorg.testng.TestRunner@530712d
+2023-10-23 19:19:04,704 [main] INFO Logger_File - test execution startedorg.testng.TestRunner@530712d
+2023-10-23 19:19:04,731 [main] INFO Logger_File - it is before test
+2023-10-23 19:19:04,783 [main] INFO Logger_File - getAllUsers
+2023-10-23 19:19:08,383 [main] INFO Logger_File - it is json response
+2023-10-23 19:19:08,391 [main] INFO Logger_File - test passed successfully
+2023-10-23 19:19:08,392 [main] INFO Logger_File - method name: getAllUsers
+2023-10-23 19:19:08,425 [main] INFO Logger_File - getSingleUser
+2023-10-23 19:19:08,688 [main] INFO Logger_File - test passed successfully
+2023-10-23 19:19:08,691 [main] INFO Logger_File - method name: getSingleUser
+2023-10-23 19:19:08,734 [main] INFO Logger_File -  end of executionorg.testng.TestRunner@530712d
